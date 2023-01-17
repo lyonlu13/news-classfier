@@ -84,23 +84,23 @@ if __name__ == "__main__":
     print("Train classifier title_5...")
     model = BertClassifier(5)
     train(model, title5_t, title5_v)
-    torch.save(model, "./model/title_5.pt")
+    torch.save(model, "./models/title_5.pt")
     del model
 
     print("Train classifier head_5...")
     model = BertClassifier(5)
     train(model, head5_t, head5_v)
-    torch.save(model, "./model/head_5.pt")
+    torch.save(model, "./models/head_5.pt")
     del model
 
     print("Train classifier title_4...")
     model = BertClassifier(4)
     train(model, title4_t, title4_v)
-    torch.save(model, "./model/title_4.pt")
+    torch.save(model, "./models/title_4.pt")
     del model
 
     print("Train classifier head_4...")
     model = BertClassifier(4)
     train(model, head4_t, head4_v)
-    torch.save(model, "./model/head_4.pt")
+    torch.save(model, "./models/head_4.pt")
     del model
